@@ -1,0 +1,127 @@
+body {
+    font-family: Lora, Times, serif;
+}
+
+input[type="radio"] {
+    float: left;
+    cursor: pointer;
+}
+
+legend {
+    font-size: 2em;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    -webkit-align-items: center;
+            align-items: center;
+}
+
+.quiz {
+    width: 30em;
+    height: 30em;
+    background: #ececec;
+    border-radius: 8px;
+    border: 1px solid #CDD4DC;
+    -ms-overflow-x: hidden;
+        overflow-x: hidden;
+}
+
+.quiz-container {
+    display: flex;
+    list-style: none;
+    /* This needs to be set dynamically */
+    width: 120em;
+    height: 25em;
+    padding-left: 0;
+}
+
+.quiz-question,
+.quiz-review {
+    max-width: 26em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.quiz-question legend {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid #1A2029;
+    width: 100%;
+}
+
+.quiz-question input {
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.quiz-question label {
+    display: block;
+    padding-left: 5px;
+    margin-bottom: 15px;
+}
+
+.quiz-question h2{
+    color: #3B3232;
+    font-weight: 700;
+}
+
+.quiz-navigation {
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+}
+
+.quiz-total-heading {
+    font-size: 2em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    width: 100%;
+    font-weight: 100;
+    white-space: pre;
+}
+
+.but {
+    width: 8.5em;
+    -webkit-border-radius: 8px;
+            border-radius: 8px;
+    border-style: none;
+    background: #916A70;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.but--prev {
+    -webkit-border-top-right-radius: 0;
+            border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+            border-bottom-right-radius: 0;
+}
+
+.but--prev .fa {
+    margin-right: 5px;
+}
+
+.but--next {
+    -webkit-border-top-left-radius: 0;
+            border-top-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+            border-bottom-left-radius: 0;
+}
+
+.but--next .fa {
+    margin-left: 5px;
+}
+
+
+.quiz-navigation input {
+    text-align: center;
+    border-top: 1px solid #CDD4DC;
+    border-bottom: 1px solid #CDD4DC;
+    border-style: none;
+}
